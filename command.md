@@ -31,3 +31,27 @@ Create IAM Role with Administrator Access
 
 You need to create an IAM role with AdministratorAccess policy.
 Go to AWS console, IAM, click on Roles. create a role
+
+
+ 
+
+Select AWS services, Click EC2, Click on Next permissions.
+ 
+ Now search for AdministratorAccess policy and click
+
+
+Skip on create tag.
+Now give a role name and create it.
+
+
+Assign the role to EC2 instance
+Go to AWS console, click on EC2, select EC2 instance, Choose Security.
+Click on Modify IAM Role
+
+
+
+Choose the role you have created from the dropdown.
+Select the role and click on Apply.
+
+
+

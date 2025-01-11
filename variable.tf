@@ -1,12 +1,17 @@
- variable "subnet_id_1" {
-  type = string
-  default = "subnet-ec90408a"
- }
+ variable "vpc_cidr" {
+  description = "VPC CIDR"
+  type        = string
+}
 
- variable "subnet_id_2" {
-  type = string
-  default = "subnet-0a911b04"
- }
+variable "private_subnets" {
+  description = "Subnets CIDR"
+  type        = list(string)
+}
+
+variable "public_subnets" {
+  description = "Subnets CIDR"
+  type        = list(string)
+}
 
  variable "cluster_name" {
   type = string

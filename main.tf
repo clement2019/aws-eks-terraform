@@ -81,7 +81,7 @@ resource "aws_iam_role" "workernodes" {
   cluster_name  = aws_eks_cluster.my-eks.name
   node_group_name = "my-workernodes"
   node_role_arn  = aws_iam_role.workernodes.arn
-  subnet_ids   = [var.subnet_id_1, var.subnet_id_2]
+  subnet_ids   = [var.public_subnets, var.private_subnets]
   instance_types = ["t2.medium"]
 
   scaling_config {
