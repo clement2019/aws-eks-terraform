@@ -4,13 +4,13 @@
 }
 
 variable "private_subnets" {
-  description = "Subnets CIDR"
-  type        = list(string)
+  type    = list(any)
+  default = []
 }
 
 variable "public_subnets" {
-  description = "Subnets CIDR"
-  type        = list(string)
+   type    = list(any)
+  default = []
 }
 
  variable "cluster_name" {
