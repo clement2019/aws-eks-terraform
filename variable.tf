@@ -3,13 +3,13 @@
   type        = string
 }
 
-variable "private_subnets" {
-  type    = list(any)
+variable "private_subnet_cidr_block" {
+  type    = string
   default = []
 }
 
-variable "public_subnets" {
-   type    = list(any)
+variable "public_subnet_cidr_block"{
+   type    = string
   default = []
 }
 

@@ -28,13 +28,45 @@ resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly-EK
  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
  role    = aws_iam_role.eks-iam-role.name
 }
+//======
+
+# Public Subnet
+resource "aws_subnet" "public_subnets" {
+  vpc_id            = aws_vpc.main.id
+  
+  cidr_block        = var.public_subnet_cidr_block
+  map_public_ip_on_launch = true
+  tags = {
+    Name = "my-server-Public-Subnet"
+  }
+}
+
+# Private Subnet
+resource "aws_subnet" "private_subnets" {
+  vpc_id     = aws_vpc.main.id
+  cidr_block =var.private_subnet_cidr_block
+  tags = {
+    Name = "my-server-Private-Subnet"
+  }
+}
+resource "aws_vpc" "main" {
+  cidr_block = var.vpc_cidr
+  tags = {
+    Name = "my-vpc"
+  }
+}
+
+
+//======
 
 resource "aws_eks_cluster" "my-eks" {
  name = var.cluster_name
  role_arn = aws_iam_role.eks-iam-role.arn
 
  vpc_config {
-  subnet_ids = [var.public_subnets, var.private_subnets]
+
+
+  subnet_ids = [aws_subnet.public_subnets.id,aws_subnet.private_subnets.id]
  }
 
  depends_on = [
