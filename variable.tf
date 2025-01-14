@@ -2,14 +2,14 @@
 # networking
 
 
-variable "public_subnet1_cidr_block" {
+variable "public_subnet1" {
   description = "CIDR Block for Public Subnet 1"
-  default     = "10.0.1.0/24"
+  default     = "subnet-98dba5e2"
 }
 
-variable "private_subnet_cidr_block" {
-  description = "CIDR Block for Private Subnet 1"
-  default     = "10.0.3.0/24"
+variable "public_subnet2" {
+  description = "CIDR Block for PublicSubnet 1"
+  default     = "subnet-4356da0f"
 }
 
 variable "cluster_name" {
