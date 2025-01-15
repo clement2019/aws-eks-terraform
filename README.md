@@ -61,9 +61,6 @@ make sure that you have the permsion set for th e role to ba attchaned to the ec
 ![iam role-2](https://github.com/user-attachments/assets/36f14a88-4eed-452c-a099-aa7d693fdfc6)
 
 
-
-
-
 * make sure it has the right permission
 
 <img width="1440" alt="Screenshot 2025-01-15 at 10 55 14" src="https://github.com/user-attachments/assets/237433b4-6f70-4919-8e71-8f9e8d08a482" />
@@ -74,28 +71,6 @@ Now having given the ec2 instance the right permisson has shown above to be able
 we need to connect to the ec2 machine using ssh connection(ssh client) as shown below
 
 
-
-
-
-Now run the command below to updZte the package on the brown new machine
-sudo apt update -y
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 20 50" src="https://github.com/user-attachments/assets/f7527ff4-a0a8-4d7a-9428-29e0d81dac09" />
-
-
-Now get the list of items instellaed on the ec2 instance
-
-ubuntu@ip-172-31-20-168:~$ ls
-aws  aws-eks-terraform  awscliv2.zip  get_helm.sh  hashicorp.gpg  installatio-script.sh  kubectl
-
-Now after creating all the perequiste and terraform is installed using the comand below
-
-ubuntu@ip-172-31-20-168:~$ terraform --version
-
-Terraform v1.10.4
-on linux_amd64
-ubuntu@ip-172-31-20-168:~$ 
 
 Now create all the terraform files inside the "aws-terraform" prpject direcrory
 
@@ -114,6 +89,19 @@ provider.tf
 variable.tf
 
 view the content of the main.tf below
+
+
+
+
+
+Now run the command below to updZte the package on the brown new machine
+sudo apt update -y
+
+
+<img width="1440" alt="Screenshot 2025-01-15 at 12 20 50" src="https://github.com/user-attachments/assets/f7527ff4-a0a8-4d7a-9428-29e0d81dac09" />
+
+
+
 
 
 
