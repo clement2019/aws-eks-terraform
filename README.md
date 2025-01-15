@@ -201,10 +201,4 @@ kubectl get deployments
 
 the above command should delete the EKS cluster in AWS, it might take a few mins to clean up the cluster.
 
-Errors during Cluster creation
-If you are having issues when creating a cluster, try to delete the cluster by executing the below command and re-create it.
-
-you can also delete the cluster under AWS console --> Elastic Kubernetes Service --> Clusters
-Click on Delete cluster
-
 
