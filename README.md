@@ -199,6 +199,10 @@ kubectl get deployments
 # terraform destroy
 <img width="1440" alt="Screenshot 2025-01-15 at 14 29 26" src="https://github.com/user-attachments/assets/f6b9cdef-bc3e-4fae-b3f6-8a3cbb5cf258" />
 
+
+<img width="1440" alt="Screenshot 2025-01-15 at 14 38 18" src="https://github.com/user-attachments/assets/1de942fa-eea4-4dbf-ada6-3e4907a25fcf" />
+
+
 the above command should delete the EKS cluster in AWS, it might take a few mins to clean up the cluster.
 
 
