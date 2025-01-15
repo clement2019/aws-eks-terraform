@@ -38,13 +38,13 @@ This Lab is using an EC2 instance with following configured:
 * Install Aws cli and run aws confirhure to insert the secret key and access key for the IAM user created if neccessary
 but in most cases if the IAm role crreated has administrative access and it attached to the ec2 inance is more than enough to deply the cluster
 
-<img width="1440" alt="Screenshot 2025-01-15 at 11 46 37" src="https://github.com/user-attachments/assets/ca2dea61-81e7-4ae7-96a6-9046788c82ac" />
+
 
 
 * Install Kubectl: A command line tool working Kubernetes clusters
 * Create an IAM role with AdministratorAccess policy or add AWS root keys
 
-<img width="1440" alt="Screenshot 2025-01-15 at 10 55 14" src="https://github.com/user-attachments/assets/c95e3ed8-d348-49c8-ba25-9e7c77e2a4b2" />
+
 
 
 
@@ -71,6 +71,10 @@ Now having given the ec2 instance the right permisson has shown above to be able
 we need to connect to the ec2 machine using ssh connection(ssh client) as shown below
 
 
+<img width="1440" alt="Screenshot 2025-01-15 at 13 27 21" src="https://github.com/user-attachments/assets/4e95d452-e49d-4972-94bd-f9d37b1a62c8" />
+
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 40 46" src="https://github.com/user-attachments/assets/230397b3-59f8-4db1-8719-1ddc6d640ff4" />
 
 Now create all the terraform files inside the "aws-terraform" prpject direcrory
 
@@ -96,6 +100,8 @@ view the content of the main.tf below
 
 Now run the command below to updZte the package on the brown new machine
 sudo apt update -y
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 24 32" src="https://github.com/user-attachments/assets/411d0846-69ec-4bd0-ae88-00c02d7a80b0" />
 
 
 <img width="1440" alt="Screenshot 2025-01-15 at 13 22 29" src="https://github.com/user-attachments/assets/5f9f3bac-765a-40f2-88f0-5eb7f2db9d09" />
@@ -126,6 +132,8 @@ this command will help to initaolise the backend s3 bucket configuration so that
 for this project i used aws default vpc and selected two subnets attached to my region
 the two subnets id select were mentioned in my variable.tf file as default.
 The terraform plan showing how many resources will be creted are shown below
+
+
 
 
 
