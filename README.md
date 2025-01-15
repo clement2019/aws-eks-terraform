@@ -148,12 +148,5 @@ for this project i used aws default vpc and selected two subnets attached to my 
 the two subnets id select were mentioned in my variable.tf file as default.
 The terraform plan showing how many resources will be creted are shown below
 
-<img width="1440" alt="Screenshot 2025-01-15 at 12 53 03" src="https://github.com/user-attachments/assets/075a0815-4f08-49de-a1d0-9f24b69fac2e" />
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 59 19" src="https://github.com/user-attachments/assets/25a1226b-3d33-43d6-ab35-23ae9ae2d457" />
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 59 32" src="https://github.com/user-attachments/assets/677e3d0d-311c-4b27-80e3-2655c10beef0" />
 
 
