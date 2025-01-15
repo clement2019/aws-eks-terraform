@@ -181,13 +181,15 @@ kubectl get nodes
 
 kubectl get ns
 
+<img width="1440" alt="Screenshot 2025-01-15 at 14 20 10" src="https://github.com/user-attachments/assets/de508529-e17c-44f9-ab34-33f7020b5f40" />
+
 
 # Deploy Nginx on a Kubernetes Cluster
 Let us run some apps to make sure they are deployed to Kubernetes cluster. The below command will create deployment:
 
 kubectl create deployment nginx --image=nginx
 
-
+<img width="1440" alt="Screenshot 2025-01-15 at 14 21 16" src="https://github.com/user-attachments/assets/3e6768ca-e763-4f78-9e21-84a14e1771cf" />
 
 View Deployments
 kubectl get deployments
