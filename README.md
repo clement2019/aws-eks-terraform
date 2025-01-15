@@ -139,7 +139,11 @@ The terraform plan showing how many resources will be creted are shown below
 <img width="1440" alt="Screenshot 2025-01-15 at 12 59 19" src="https://github.com/user-attachments/assets/34f65f7f-2298-4ec3-bdb6-972a09c40a59" />
 
 
-Now Run the command to frinally create the aws-eks cluster as shown below
+Now Run the command to finally create the aws-eks cluster as shown below
+
+terraform apply --auto-approve
+
+This will create 12 resources.
 
 
 
@@ -151,6 +155,57 @@ Now Run the command to frinally create the aws-eks cluster as shown below
 
 Now confirm the aws-eks cluster creation
 
+<img width="1440" alt="Screenshot 2025-01-15 at 14 00 07" src="https://github.com/user-attachments/assets/255a428a-9ae5-434b-9883-ac9178e83cef" />
 
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 59 54" src="https://github.com/user-attachments/assets/aa4b451c-f31b-45b3-80a1-b6f3ce1ede46" />
+
+
+
+Update Kube config
+
+Update Kube config by entering below command:
+
+aws eks update-kubeconfig --name my-eks-cluster --region us-east-1
+
+
+
+kubeconfig file be updated under /home/ubuntu/.kube folder.
+
+you can view the kubeconfig file by entering the below command:
+
+cat  /home/ubuntu/.kube/config
+
+Connect to EKS cluster using kubectl commands
+
+To view the list of worker nodes as part of EKS cluster.
+
+kubectl get nodes
+
+
+kubectl get ns
+
+
+Deploy Nginx on a Kubernetes Cluster
+Let us run some apps to make sure they are deployed to Kubernetes cluster. The below command will create deployment:
+
+kubectl create deployment nginx --image=nginx
+
+
+
+View Deployments
+kubectl get deployments
+
+Delete EKS Cluster
+
+terraform destroy
+
+the above command should delete the EKS cluster in AWS, it might take a few mins to clean up the cluster.
+
+Errors during Cluster creation
+If you are having issues when creating a cluster, try to delete the cluster by executing the below command and re-create it.
+
+you can also delete the cluster under AWS console --> Elastic Kubernetes Service --> Clusters
+Click on Delete cluster
 
 
