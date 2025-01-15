@@ -63,7 +63,7 @@ make sure that you have the permsion set for th e role to ba attchaned to the ec
 
 * make sure it has the right permission
 
-<img width="1440" alt="Screenshot 2025-01-15 at 10 55 14" src="https://github.com/user-attachments/assets/237433b4-6f70-4919-8e71-8f9e8d08a482" />
+
 
 
 
@@ -98,7 +98,14 @@ Now run the command below to updZte the package on the brown new machine
 sudo apt update -y
 
 
-<img width="1440" alt="Screenshot 2025-01-15 at 12 20 50" src="https://github.com/user-attachments/assets/f7527ff4-a0a8-4d7a-9428-29e0d81dac09" />
+<img width="1440" alt="Screenshot 2025-01-15 at 13 22 29" src="https://github.com/user-attachments/assets/5f9f3bac-765a-40f2-88f0-5eb7f2db9d09" />
+
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 24 32" src="https://github.com/user-attachments/assets/cebb6e59-ab55-4572-bfc5-c1ca6aded038" />
+
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 25 16" src="https://github.com/user-attachments/assets/f9528ac6-68cf-4e98-84ee-9f47efed7588" />
+
 
 
 
