@@ -64,22 +64,14 @@ make sure that you have the permsion set for th e role to ba attchaned to the ec
 
 
 
-* make sure it has the right permision
+* make sure it has the right permission
 
 <img width="1440" alt="Screenshot 2025-01-15 at 10 55 14" src="https://github.com/user-attachments/assets/237433b4-6f70-4919-8e71-8f9e8d08a482" />
 
 
 
-Now having given the ec2 instance the right perosmion has shown above to be able to carry creation of kubernstes cluster
+Now having given the ec2 instance the right permisson has shown above to be able to carry creation of kubernstes cluster
 we need to connect to the ec2 machine using ssh connection(ssh client) as shown below
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 07 21" src="https://github.com/user-attachments/assets/da8bb15f-6757-4b97-8ee3-8d35ae2fe463" />
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 11 46 37" src="https://github.com/user-attachments/assets/7ef39833-3c9e-4198-be50-6ca305dde7a9" />
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 09 26" src="https://github.com/user-attachments/assets/ff36eaca-1039-45c1-a667-39116f087bfd" />
 
 
 
