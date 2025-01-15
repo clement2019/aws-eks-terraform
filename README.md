@@ -64,7 +64,19 @@ make sure that you have the permsion set for th e role to ba attchaned to the ec
 
 
 
-* Make sure you have already VPC created with at least two subnets
-
+* make sure it has the right permision
 
 <img width="1440" alt="Screenshot 2025-01-15 at 10 55 14" src="https://github.com/user-attachments/assets/237433b4-6f70-4919-8e71-8f9e8d08a482" />
+
+
+
+Now having given the ec2 instance the right perosmion has shown above to be able to carry creation of kubernstes cluster
+we need to connect to the ec2 machine using ssh connection(ssh client) as shown below
+
+<img width="1440" alt="Screenshot 2025-01-15 at 12 07 21" src="https://github.com/user-attachments/assets/da8bb15f-6757-4b97-8ee3-8d35ae2fe463" />
+<img width="1440" alt="Screenshot 2025-01-15 at 12 07 21" src="https://github.com/user-attachments/assets/8e68e081-08d2-4690-932a-bc7b06e4146e" />
+<img width="1440" alt="Screenshot 2025-01-15 at 10 55 14" src="https://github.com/user-attachments/assets/5b58ca4f-1270-43f4-9cf7-eb8d498c5e72" />
+
+
+
+Make sure you have already VPC created with at least two subnets
