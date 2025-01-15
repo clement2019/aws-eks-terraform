@@ -74,7 +74,7 @@ we need to connect to the ec2 machine using ssh connection(ssh client) as shown 
 <img width="1440" alt="Screenshot 2025-01-15 at 13 27 21" src="https://github.com/user-attachments/assets/4e95d452-e49d-4972-94bd-f9d37b1a62c8" />
 
 
-<img width="1440" alt="Screenshot 2025-01-15 at 13 40 46" src="https://github.com/user-attachments/assets/230397b3-59f8-4db1-8719-1ddc6d640ff4" />
+
 
 Now create all the terraform files inside the "aws-terraform" prpject direcrory
 
@@ -113,7 +113,9 @@ sudo apt update -y
 <img width="1440" alt="Screenshot 2025-01-15 at 13 25 16" src="https://github.com/user-attachments/assets/f9528ac6-68cf-4e98-84ee-9f47efed7588" />
 
 
+The kubernetes cluster scrript are shown below
 
+<img width="1440" alt="Screenshot 2025-01-15 at 12 59 32" src="https://github.com/user-attachments/assets/905c4b2f-2e14-4333-b44f-d19d36cf674f" />
 
 
 
@@ -133,6 +135,21 @@ for this project i used aws default vpc and selected two subnets attached to my 
 the two subnets id select were mentioned in my variable.tf file as default.
 The terraform plan showing how many resources will be creted are shown below
 
+
+<img width="1440" alt="Screenshot 2025-01-15 at 12 59 19" src="https://github.com/user-attachments/assets/34f65f7f-2298-4ec3-bdb6-972a09c40a59" />
+
+
+Now Run the command to frinally create the aws-eks cluster as shown below
+
+
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 51 14" src="https://github.com/user-attachments/assets/4aa7195e-6667-4c17-9295-e1261809dcf4" />
+
+
+<img width="1440" alt="Screenshot 2025-01-15 at 13 51 35" src="https://github.com/user-attachments/assets/96a7ef83-927f-4c4e-a5e7-54bbbe1e9c7e" />
+
+
+Now confirm the aws-eks cluster creation
 
 
 
