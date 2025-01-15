@@ -39,12 +39,8 @@ This Lab is using an EC2 instance with following configured:
 but in most cases if the IAm role crreated has administrative access and it attached to the ec2 inance is more than enough to deply the cluster
 
 
-
-
 * Install Kubectl: A command line tool working Kubernetes clusters
 * Create an IAM role with AdministratorAccess policy or add AWS root keys
-
-
 
 
 
@@ -62,9 +58,6 @@ make sure that you have the permsion set for th e role to ba attchaned to the ec
 
 
 * make sure it has the right permission
-
-
-
 
 
 Now having given the ec2 instance the right permisson has shown above to be able to carry creation of kubernstes cluster
@@ -113,13 +106,9 @@ sudo apt update -y
 <img width="1440" alt="Screenshot 2025-01-15 at 13 25 16" src="https://github.com/user-attachments/assets/f9528ac6-68cf-4e98-84ee-9f47efed7588" />
 
 
-The kubernetes cluster scrript are shown below
+The kubernetes cluster script are shown below
 
 <img width="1440" alt="Screenshot 2025-01-15 at 12 59 32" src="https://github.com/user-attachments/assets/905c4b2f-2e14-4333-b44f-d19d36cf674f" />
-
-
-
-
 
 
 ## Running Terraform commands:
@@ -139,7 +128,7 @@ The terraform plan showing how many resources will be creted are shown below
 <img width="1440" alt="Screenshot 2025-01-15 at 12 59 19" src="https://github.com/user-attachments/assets/34f65f7f-2298-4ec3-bdb6-972a09c40a59" />
 
 
-Now Run the command to finally create the aws-eks cluster as shown below
+# Now Run the command to finally create the aws-eks cluster as shown below
 
 terraform apply --auto-approve
 
@@ -153,7 +142,7 @@ This will create 12 resources.
 <img width="1440" alt="Screenshot 2025-01-15 at 13 51 35" src="https://github.com/user-attachments/assets/96a7ef83-927f-4c4e-a5e7-54bbbe1e9c7e" />
 
 
-Now confirm the aws-eks cluster creation
+# Now confirm the aws-eks cluster creation
 
 <img width="1440" alt="Screenshot 2025-01-15 at 14 00 07" src="https://github.com/user-attachments/assets/255a428a-9ae5-434b-9883-ac9178e83cef" />
 
@@ -162,11 +151,13 @@ Now confirm the aws-eks cluster creation
 
 
 
-Update Kube config
+## Update Kube config
 
 Update Kube config by entering below command:
 
-aws eks update-kubeconfig --name my-eks-cluster --region us-east-1
+aws eks update-kubeconfig --name my-eks-cluster --region eu-west-2
+
+<img width="1440" alt="Screenshot 2025-01-15 at 14 14 02" src="https://github.com/user-attachments/assets/cf188e6d-5086-4583-b8ca-c3cd0cca19b5" />
 
 
 
@@ -174,7 +165,9 @@ kubeconfig file be updated under /home/ubuntu/.kube folder.
 
 you can view the kubeconfig file by entering the below command:
 
-cat  /home/ubuntu/.kube/config
+cat /home/ubuntu/.kube/config
+
+<img width="1440" alt="Screenshot 2025-01-15 at 14 15 00" src="https://github.com/user-attachments/assets/b5234f01-3689-4e72-8c80-3c28ae61d200" />
 
 Connect to EKS cluster using kubectl commands
 
@@ -182,11 +175,14 @@ To view the list of worker nodes as part of EKS cluster.
 
 kubectl get nodes
 
+<img width="1440" alt="Screenshot 2025-01-15 at 14 16 15" src="https://github.com/user-attachments/assets/4100fc1d-5e04-42d1-8e6d-8f9a35d76569" />
+
+
 
 kubectl get ns
 
 
-Deploy Nginx on a Kubernetes Cluster
+# Deploy Nginx on a Kubernetes Cluster
 Let us run some apps to make sure they are deployed to Kubernetes cluster. The below command will create deployment:
 
 kubectl create deployment nginx --image=nginx
@@ -199,6 +195,7 @@ kubectl get deployments
 Delete EKS Cluster
 
 terraform destroy
+
 
 the above command should delete the EKS cluster in AWS, it might take a few mins to clean up the cluster.
 
