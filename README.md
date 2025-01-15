@@ -117,12 +117,5 @@ variable.tf
 
 view the content of the main.tf below
 
-<img width="1440" alt="Screenshot 2025-01-15 at 12 32 58" src="https://github.com/user-attachments/assets/1318fca5-d4d2-424f-aca3-29fed66b5c6e" />
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 33 16" src="https://github.com/user-attachments/assets/7088cfbd-bffb-4f74-b044-22ae88e176c8" />
-
-
-<img width="1440" alt="Screenshot 2025-01-15 at 12 37 37" src="https://github.com/user-attachments/assets/3239f939-6b23-48dc-8438-b17165eac356" />
 
 Make sure you have already VPC created with at least two subnets
